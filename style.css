@@ -170,7 +170,7 @@ img#stay-conected-img {
     }
 }
 
-.dynamic-text{
+.dynamic-text {
     margin-top: 30px;
 
 }
@@ -278,10 +278,102 @@ body {
 
 .footer-link {
     text-decoration: none;
-    color: #1d4ed8; /* blue-700 */
+    color: #1d4ed8;
+    /* blue-700 */
     transition: text-decoration 0.3s;
 }
 
 .footer-link:hover {
     text-decoration: underline;
+}
+
+.get-in-touch {
+    margin: 95px;
+    font-size: 20px;
+}
+
+.contact-us{
+    margin-bottom: 57px;
+}
+/* Contact us page styling */
+
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    border: 2px solid;
+}
+
+.form-heading {
+    text-align: center;
+    margin: 2em;
+    color: #000000;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+}
+
+.form-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: 1px solid;
+}
+
+.input-field {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #000000;
+    padding-inline: 1em;
+}
+
+.sendMessage-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #000000;
+    font-weight: bold;
+    outline: 1px solid #000000;
+    transition: all ease-in-out 0.3s;
+}
+
+.sendMessage-btn:hover {
+    transition: all ease-in-out 0.3s;
+
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-card1 {
+
+    border-radius: 22px;
+    margin-bottom: 100px;
+    transition: all 0.3s;
+}
+
+
+.form-card2 {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.form-card2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
 }

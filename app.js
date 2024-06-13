@@ -36,8 +36,9 @@ function showSlides() {
 }
 showSlides();
 
+
 var typed = new Typed('#element', {
-        strings: ['Explore Dubai with us',' Where Every Trip is a Treasure'],
-        typeSpeed:70,
-        loop: true,
-      });
+    strings: ['Explore Dubai with us', ' Where Every Trip is a Treasure'],
+    typeSpeed: 70,
+    loop: true,
+});
