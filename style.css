@@ -49,11 +49,12 @@
 
 .nav-link {
     color: #FFF;
-    font-size: 24px;
+    font-size: 24px !important;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     text-decoration: none;
 }
+
 .nav-link:hover {
     text-decoration: underline;
 }
@@ -428,7 +429,7 @@ div#footer {
     color: #fff;
 }
 
-button#prev{
+button#prev {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -439,7 +440,7 @@ button#prev{
     border-radius: 5px;
 }
 
-button#next{
+button#next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -546,5 +547,14 @@ button:hover {
     font-size: 19px;
     padding: 54px;
     text-align: center;
+    line-height: 2;
+}
+
+div#aboutus {
+    padding: 79px;
+}
+
+p {
+    padding: 12px;
     line-height: 2;
 }
