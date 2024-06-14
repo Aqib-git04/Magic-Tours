@@ -7,6 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -22,9 +26,8 @@
                         <li><a href="index.html" class="nav-link">Home</a></li>
                         <li><a href="#" class="nav-link" target="_blank">About</a></li>
                         <li><a href="./contactus.html" class="nav-link">Contact</a></li>
-                        <li><a href="#" class="nav-link" target="_blank">Services</a></li>
-                        <li><a href="#" class="nav-link" target="_blank">Categories</a></li>
-                        <li id="Register-hidden-li"><a href="#" class="nav-link" target="_blank">Register | Log In</a>
+                        <li><a href="./services.html" class="nav-link">Services</a></li>
+                        <li id="#"><a href="#" class="nav-link">Register | Log In</a>
                         </li>
                         <!-- btn for close the menu  -->
                         <span id="closeButton">✖</span>
@@ -100,10 +103,43 @@
         <span class="dot"></span>
     </div>
 
+    <!--  testimonials -->
+    <div class="testimonialHeading">
+        <h1>TESTIMONIALS</h1>
+    </div>
+
+
+    <div class="testimonial-slider">
+
+        <div class="testimonial-slide">
+            <p>"Magic Tours provided an unforgettable experience! The service was excellent and the tour was
+                well-organized."</p>
+            <h4>- John Doe</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>"Our trip to Dubai was made special by the fantastic team at Magic Tours. Highly recommended!"</p>
+            <h4>- Jane Smith</h4>
+        </div>
+        <div class="testimonial-slide">
+            <p>"A wonderful travel agency with great attention to detail. They made our vacation stress-free and
+                enjoyable."</p>
+            <h4>- Michael Johnson</h4>
+        </div>
+        <button id="prev" class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button id="next" class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+
+    <!--  -->
 
     <div id="footer">
         <footer class="footer">
             <!-- Column 1 -->
+
+            <div id="footer-logo">
+
+                <img class="magic-logo" src="./assets/magic-logo.png" alt="">
+            </div>
             <div class="footer-column">
                 <h3 class="footer-heading">Company</h3>
                 <ul>
@@ -114,44 +150,7 @@
                     <li><a href="#" class="footer-link">Privacy Policy</a></li>
                 </ul>
             </div>
-            <div class="footer-column">
-                <h3 class="footer-heading">UAE</h3>
-                <ul>
-                    <li><a href="#" class="footer-link">Dubai</a></li>
-                    <li><a href="#" class="footer-link">Abu Dhabi</a></li>
-                    <li><a href="#" class="footer-link">Ras Al Khaimah</a></li>
-                    <li><a href="#" class="footer-link">Sharjah</a></li>
-                    <li><a href="#" class="footer-link">Fujairah</a></li>
-                    <li><a href="#" class="footer-link">Ajman</a></li>
-                    <li><a href="#" class="footer-link">Umm Al Qawain</a></li>
-                    <li><a href="#" class="footer-link">Al Ain</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3 class="footer-heading">Countries</h3>
-                <ul>
-                    <li><a href="#" class="footer-link">Egypt</a></li>
-                    <li><a href="#" class="footer-link">Bahrain</a></li>
-                    <li><a href="#" class="footer-link">Lebanon</a></li>
-                    <li><a href="#" class="footer-link">Kuwait</a></li>
-                    <li><a href="#" class="footer-link">Oman</a></li>
-                    <li><a href="#" class="footer-link">Qatar</a></li>
-                    <li><a href="#" class="footer-link">Pakistan</a></li>
-                </ul>
-            </div>
-            <div class="footer-column">
-                <h3 class="footer-heading">Get Social</h3>
-                <ul>
-                    <li><a href="https://www.facebook.com/MagicToursKarachiOfficial" class="footer-link"
-                            target="_blank">Facebook</a></li>
-                    <li><a href="https://www.tiktok.com/@magictoursgroup" class="footer-link" target="_blank">Tik
-                            Tok</a></li>
-                    <li><a href="https://www.youtube.com/@Magictoursgroup539" class="footer-link"
-                            target="_blank">Youtube</a></li>
-                    <li><a href="https://www.instagram.com/magictourskarachiofficial/" class="footer-link"
-                            target="_blank">Instagram</a></li>
-                </ul>
-            </div>
+
             <div class="footer-column">
                 <h3 class="footer-heading">Support</h3>
                 <ul>
@@ -161,15 +160,24 @@
                 </ul>
             </div>
             <div class="footer-column">
-                <h3 class="footer-heading">Languages</h3>
-                <ul>
-                    <li><a href="#" class="footer-link">English</a></li>
+                <h3 class="footer-heading">Get Social</h3>
+                <ul id="social-icons">
+                    <li><a href="https://www.facebook.com/MagicToursKarachiOfficial" class="footer-link"
+                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@magictoursgroup"><i class="fa-brands fa-tiktok"></i></a></li>
+                    <li><a href="https://www.youtube.com/@Magictoursgroup539"><img
+                                src="./assets/youtube-removebg-preview.png" alt="" id="youtube-icon"></a></li>
+                    <li><a href="https://www.instagram.com/magictourskarachiofficial/"><i class="fa-brands fa-instagram"
+                                style="color: #ff0000;"></i></a></li>
                 </ul>
+                <div id="payment-getways"><img src="./assets/creditcard-logo.png" alt=""></div>
             </div>
         </footer>
     </div>
+
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js"></script>
+    
 </body>
 
 </html>

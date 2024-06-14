@@ -13,7 +13,7 @@ const openmenubtn = document.getElementById("hamburger");
 openmenubtn.addEventListener("click", openmenu);
 
 
-// 
+
 
 let slideIndex = 0;
 
@@ -42,3 +42,29 @@ var typed = new Typed('#element', {
     typeSpeed: 70,
     loop: true,
 });
+
+
+let testimonialslideIndex = 0;
+
+function showSlide(index) {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? 'block' : 'none';
+    });
+}
+
+function changeSlide(n) {
+    const slides = document.querySelectorAll('.testimonial-slide');
+    testimonialslideIndex += n;
+
+    if (testimonialslideIndex >= slides.length) {
+        testimonialslideIndex = 0;
+    } else if (testimonialslideIndex < 0) {
+        testimonialslideIndex = slides.length - 1;
+    }
+
+    showSlide(testimonialslideIndex);
+}
+
+// Initialize the slider
+showSlide(testimonialslideIndex);

@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 /* Header Styles */
@@ -48,12 +49,11 @@
 
 .nav-link {
     color: #FFF;
-    font-size: 0.875rem;
+    font-size: 24px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     text-decoration: none;
 }
-
 .nav-link:hover {
     text-decoration: underline;
 }
@@ -71,7 +71,7 @@ img.magic-logo {
 }
 
 img.center-img {
-    width: 100vw;
+    width: 100%;
 }
 
 img#stay-conected-img {
@@ -230,12 +230,12 @@ img {
 /* Fading animation */
 .fade {
     animation-name: fade;
-    animation-duration: 1.5s;
+    animation-duration: 3s;
 }
 
 @keyframes fade {
     from {
-        opacity: .4
+        opacity: .2
     }
 
     to {
@@ -256,12 +256,13 @@ body {
 }
 
 .footer {
-    color: black;
+    background-color: #05203C;
+    color: #fff;
     padding: 2rem;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: #e0e0e0;
+
 }
 
 .footer-column {
@@ -278,8 +279,7 @@ body {
 
 .footer-link {
     text-decoration: none;
-    color: #1d4ed8;
-    /* blue-700 */
+    color: #fff;
     transition: text-decoration 0.3s;
 }
 
@@ -292,13 +292,12 @@ body {
     font-size: 20px;
 }
 
-.contact-us{
+.contact-us {
     margin-bottom: 57px;
 }
+
+
 /* Contact us page styling */
-
-
-
 
 .form {
     display: flex;
@@ -376,4 +375,176 @@ body {
 .form-card2:hover {
     transform: scale(0.98);
     border-radius: 20px;
+}
+
+img#youtube-icon {
+
+    width: 28px;
+}
+
+ul#social-icons {
+    display: flex;
+    gap: 18px;
+    list-style: none;
+    border-radius: 24px;
+    padding: 16px;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.testimonial-slider {
+    position: relative;
+    max-width: 70vw;
+    margin: auto;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 131px;
+    background-color: #1c3d5c;
+}
+
+.testimonial-slide {
+    display: none;
+    text-align: center;
+}
+
+
+
+
+.testimonial-slide p {
+    font-size: 18px;
+    color: #fff;
+}
+
+div#footer {
+    margin-top: 94px;
+}
+
+.testimonial-slide h4 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #fff;
+}
+
+button#prev{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button#send-btn {
+    padding: 8px 27px;
+    border: none;
+    background-color: #cfcfcf;
+    border-radius: 19px;
+    font-size: 14px;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+button:hover {
+    background-color: #ccc;
+}
+
+
+.testimonialHeading {
+    color: #8C1852;
+    font-style: italic;
+    padding: 46px;
+}
+
+/*  */
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-form-container p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+.text-contact-us-page {
+    font-size: 19px;
+    padding: 54px;
+    text-align: center;
+    line-height: 2;
 }
