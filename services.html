@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./fontawesome-free-6.5.2-web/css/all.min.css">
 </head>
 
 <body>
@@ -18,56 +16,148 @@
         <header id="header">
             <!-- content-inside-header -->
             <div class="flex-container">
-                <div class="logo-div"><img src="./assets/WhatsApp_Image_2024-06-14_at_5.30.45_PM-removebg-preview.png"
-                        alt="" class="magic-logo"></div>
+                <div class="logo-div">
+                    <a href="./index.html">
+                        <img src="./assets/WhatsApp_Image_2024-06-14_at_5.30.45_PM-removebg-preview.png" alt=""
+                            class="magic-logo">
+                    </a>
+                    <div class="Together-we-can">Together We Can </div>
+                </div>
                 <div class="flex-grow text-center">
                     <!-- list section -->
                     <ul id="navbar">
-                        <li><a href="index.html" class="nav-link">Home</a></li>
-                        <li><a href="./aboutus.html" class="nav-link">About Us</a></li>
+                        <li><a href="./index.html" class="nav-link">Home</a></li>
+                        <li><a href="./aboutus.html" class="nav-link">About us</a></li>
                         <li><a href="./contactus.html" class="nav-link">Contact</a></li>
-                        <li><a href="./services.html" class="nav-link">Services</a></li>
-                        <li id="#"><a href="#" class="nav-link">Register | Log In</a>
+                        <li>
+                            <a href="./services.html" class="nav-link">Services</a>
+                            <div class="dropdown-content">
+                                <a href="./hotels.html" target="_blank">Hotels</a>
+                                <a href="./rent-a-car.html" target="_blank">Rent Cars</a>
+                                <a href="#" target="_blank">Traveling</a>
+                                <a href="#" target="_blank">Tours</a>
+                            </div>
                         </li>
-                        <!-- btn for close the menu  -->
                         <span id="closeButton">✖</span>
                     </ul>
                 </div>
             </div>
-            <div class="flex-container" id="Register-login">
-                <h1 class="title">MAGIC TOURS </h1>
-                <!-- hidden hamburger-menu for responsiveness -->
-                <!-- btn for open the menu  -->
-                <div id="hamburger">
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                    <div class="hamburger-line"></div>
-                </div>
+            <div id="magic-tours">
+
+                <div><span>Log In | Sign Up </span></div>
+            </div>
+
+            <div id="hamburger">
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
+                <div class="hamburger-line"></div>
             </div>
         </header>
     </div>
+    <!-- Center body -->
+    <div id="services">
+        <h1>Custom Travel Planning</h1>
+        <div>
+            <p>
+                At Magic Tours, our core service is custom travel planning. We understand that every traveler is unique,
+                with their own set of preferences and expectations. Our team of experienced travel consultants works
+                closely with you to design an itinerary that perfectly matches your desires. Whether you're dreaming of
+                a romantic getaway, a family vacation, or an adventurous solo trip, we take care of all the details,
+                from accommodation and transportation to excursions and dining reservations. Our goal is to create a
+                seamless travel experience that allows you to focus on making memories.
+            </p>
+        </div>
 
+        <h1>VIP Travel Services</h1>
+        <div>
+            <p>
+                For those seeking luxury, our VIP travel services offer the ultimate in comfort and exclusivity. We
+                provide access to some of the world's most luxurious hotels, resorts, and private villas, ensuring
+                that your stay is nothing short of extraordinary. Our VIP services include private jet charters,
+                yacht rentals, and personalized concierge services, allowing you to travel in style and convenience.
+                From private guided tours to exclusive access to top attractions, we ensure that your journey is as
+                lavish as it is memorable.
+            </p>
+        </div>
 
+        <h1>Adventure Travel Packages</h1>
+        <div>
+            <p>
+                Adventure enthusiasts will find a wealth of options with Magic Tours. We offer a variety of
+                adventure travel packages that cater to thrill-seekers and nature lovers alike. Explore the
+                breathtaking landscapes of the Arabian Desert with our guided desert safaris, which include dune
+                bashing, camel riding, and traditional Bedouin camp experiences. For water sports aficionados,
+                we provide opportunities for scuba diving, snorkeling, and jet skiing in some of the most
+                pristine waters around Dubai. Our adventure tours are designed to provide an adrenaline rush
+                while showcasing the natural beauty and cultural heritage of each destination.
+            </p>
+        </div>
+
+        <h1>Cultural Immersion Experiences</h1>
+        <div>
+            <p>
+                Cultural immersion is another key aspect of our services. We believe that travel is an
+                opportunity to connect with different cultures and learn from them. Our cultural tours offer
+                in-depth exploration of local traditions, history, and cuisine. Participate in cooking
+                classes with renowned chefs, attend traditional music and dance performances, and visit
+                historical landmarks with knowledgeable guides who bring the past to life. These experiences
+                provide a deeper understanding and appreciation of the places you visit.
+            </p>
+        </div>
+
+        <h1>Corporate Travel Solutions</h1>
+        <div>
+            <p>
+                We also cater to corporate clients with our business travel services. Understanding the
+                unique needs of corporate travelers, we offer tailored solutions that ensure efficiency
+                and comfort. Our services include corporate event planning, team-building retreats, and
+                seamless travel arrangements for meetings and conferences. With a focus on
+                professionalism and attention to detail, we help businesses achieve their objectives
+                while providing a comfortable travel experience for their employees.
+            </p>
+        </div>
+
+        <h1>Sustainable and Responsible Travel</h1>
+        <div>
+            <p>
+                At Magic Tours, we are committed to sustainable and responsible travel. We recognize
+                the impact tourism can have on the environment and local communities, and we strive
+                to minimize our footprint. By partnering with eco-friendly hotels, promoting
+                responsible wildlife tourism, and supporting local businesses, we ensure that our
+                tours contribute positively to the destinations we visit. Our sustainable travel
+                options allow you to explore the world responsibly, ensuring that future generations
+                can enjoy its wonders as well.
+            </p>
+        </div>
+
+        <h1>24/7 Customer Support</h1>
+        <div>
+            <p>
+                Our customer support team is available 24/7 to assist with any queries or issues
+                that may arise during your travels. Whether you need last-minute changes to your
+                itinerary, recommendations for local attractions, or assistance with travel
+                logistics, we are here to help. Our dedication to customer satisfaction ensures
+                that you have a worry-free and enjoyable travel experience.
+            </p>
+        </div>
+    </div>
     <div id="footer">
         <footer class="footer">
             <!-- Column 1 -->
-
             <div id="footer-logo">
-
                 <img class="magic-logo" src="./assets/WhatsApp_Image_2024-06-14_at_5.30.45_PM-removebg-preview.png"
                     alt="">
             </div>
             <div class="footer-column">
                 <h3 class="footer-heading">Company</h3>
                 <ul>
-                    <li><a href="#" class="footer-link">About Us</a></li>
-                    <li><a href="#" class="footer-link">Advertising</a></li>
+                    <li><a href="#" class="footer-link">About us</a></li>
+
                     <li><a href="#" class="footer-link">Careers</a></li>
                     <li><a href="#" class="footer-link">Terms of Use</a></li>
                     <li><a href="#" class="footer-link">Privacy Policy</a></li>
                 </ul>
             </div>
-
             <div class="footer-column">
                 <h3 class="footer-heading">Support</h3>
                 <ul>
@@ -81,18 +171,29 @@
                 <ul id="social-icons">
                     <li><a href="https://www.facebook.com/MagicToursKarachiOfficial" class="footer-link"
                             target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-                    <li><a href="https://www.tiktok.com/@magictoursgroup"><i class="fa-brands fa-tiktok"></i></a></li>
-                    <li><a href="https://www.youtube.com/@Magictoursgroup539"><img
-                                src="./assets/youtube-removebg-preview.png" alt="" id="youtube-icon"></a></li>
-                    <li><a href="https://www.instagram.com/magictourskarachiofficial/"><i class="fa-brands fa-instagram"
-                                style="color: #ff0000;"></i></a></li>
+                    <li><a href="https://www.tiktok.com/@magictoursgroup"><i class="fa-brands fa-tiktok"
+                                style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://www.youtube.com/@Magictoursgroup539"><i class="fa-brands fa-youtube"
+                                style="color: #ffffff;"></i></a></li>
+                    <li><a href="https://www.instagram.com/magictourskarachiofficial/"><i
+                                class="fa-brands fa-instagram" style="color: #ffffff;"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></a></li>
                 </ul>
-                <div id="payment-getways"><img src="./assets/creditcard-logo.png" alt="./assets/creditcard-logo.png">
+                <div id="payment-getways">
+                    <img src="./assets/creditcard-logo.png" alt="./assets/creditcard-logo.png">
                 </div>
             </div>
         </footer>
-    </div>
 
+        <div class="rover-portal">
+            <div>
+                All Rights reserved ©
+            </div>
+            <div> visit Our Portal for Ticketing <div><a href="https://www.roverholiday.com/" target="_blank">Rover
+                        Holiday</a></div>
+            </div>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="app.js"></script>
 </body>
 
