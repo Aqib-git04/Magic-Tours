@@ -12,9 +12,6 @@ closemenubtn.addEventListener("click", closemenu);
 const openmenubtn = document.getElementById("hamburger");
 openmenubtn.addEventListener("click", openmenu);
 
-
-
-
 let slideIndex = 0;
 
 function showSlides() {

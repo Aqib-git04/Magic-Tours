@@ -94,10 +94,10 @@ a#login {
 
 #navbar .dropdown-content a {
     color: black;
-    padding: 13px 29px;
+    padding: 10px 25px;
     text-decoration: none;
     display: block;
-    width: 152px;
+    width: 126px;
 }
 
 #navbar .dropdown-content a:hover {
@@ -131,26 +131,33 @@ a#login {
 /* Together We Can */
 
 .Together-we-can {
-   
+
     font-size: 18px;
 }
 
+#aboutus>h1 {
+    color: #8C1852;
+    font-size: 40px;
+}
 
 #aboutus {
-    
+
     padding: 182px;
-    color: #fff;
+    color: #000000;
     font-style: italic;
 
 }
 
-div#aboutus-img{
+/* div#aboutus-img{
     background-image: url('./assets/aboutus.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-}
+} */
 
+div#magictoursIntro {
+    text-align: center;
+}
 
 
 
@@ -207,7 +214,7 @@ div#aboutus-img{
     }
 
     #navbar .dropdown-content {
-        display: block !important;
+        display: inline-block !important;
         position: static !important;
         background-color: #05203C !important;
         box-shadow: none !important;
@@ -252,7 +259,7 @@ div#aboutus-img{
     }
 
     .nav-link {
-        font-size: 23px !important;
+        font-size: 15px !important;
     }
 }
 
@@ -353,7 +360,7 @@ div#services {
     }
 
     span#element {
-        font-size: 20px !important;
+        font-size: 15px !important;
     }
 }
 
