@@ -148,12 +148,7 @@ a#login {
 
 }
 
-/* div#aboutus-img{
-    background-image: url('./assets/aboutus.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-} */
+
 
 div#magictoursIntro {
     text-align: center;
@@ -223,6 +218,13 @@ div#magictoursIntro {
     #navbar .dropdown-content a {
         color: #fff !important;
     }
+    span#element {
+        font-size: 27px;
+    }
+    div#hotel-content{
+        font-size: 14px !important;
+    }
+   
 }
 
 @media screen and (min-width: 620px) {
@@ -242,6 +244,15 @@ div#magictoursIntro {
 
     #slide-imag {
         height: 200px;
+    }
+    div#visa-content {
+        padding: 58px 15px !important;
+    }
+
+    div#visa-img::after {
+      
+        height: 300px !important;
+       
     }
 }
 
@@ -338,12 +349,64 @@ img#youtube-icon {
 div#services {
     padding: 59px;
     font-style: italic;
-    background-image: url('./assets/services.jpg');
+    color: #8C1852;
+}
+
+
+
+
+
+/* Hotel page */
+
+div#hotel-sec {
+    position: relative;
+    background-image: url(./assets/hotel.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    justify-content: center;
 }
 
+
+div#hotel-content {
+    text-align: center;
+    line-height: 2;
+    padding: 27px;
+    font-size: 20px;
+}
+
+div#visa-content {
+    padding: 58px 106px;
+}
+
+span.visa-span {
+    font-weight: bold;
+}
+
+.heading {
+
+    color: #8C1852;
+   
+}
+
+
+div#visa-img::after {
+    content: "";
+    position: relative;
+    background-image: url(./assets/visa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: inline-block;
+    height: 638px;
+    object-fit: contain;
+}
 @keyframes fade {
     from {
         opacity: .2
